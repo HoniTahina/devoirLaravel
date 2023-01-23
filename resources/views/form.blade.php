@@ -13,7 +13,7 @@
     {{csrf_field()}}
       <div class="mb-3">
         <label for="nom" class="form-label">Nom</label>
-        <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrer votre nom">
+        <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrer le nom du projet">
       </div>
       <div class="mb-3">
         <label for="description" class="form-label">Description</label>

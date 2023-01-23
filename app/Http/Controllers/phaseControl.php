@@ -16,6 +16,9 @@ class phaseControl extends Controller
     public function annuler($id){
         return redirect('detail/' . $id);
     }
+    public function retour($id){
+        return redirect('afficher' );
+    }
     public function ajout($id){
         $phase = new phase;
         $phase->nom = request('nom');

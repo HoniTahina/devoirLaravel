@@ -37,3 +37,4 @@ Route::get('/detail/formPhase/annuler/{id}', [phaseControl::class, 'annuler']);
 Route::get('/ajouterPhase/{id}', [phaseControl::class, 'phaseForm']);
 Route::post('/detail/formPhase/ajoutPhase/{id}', [phaseControl::class, 'ajout']);
 Route::get('/formPhase', [phaseControm::class, 'formPhase']);
+Route::get('/detail/retour/{id}', [phaseControl::class, 'retour']);
