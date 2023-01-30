@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\phase;
 use App\Models\project;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\RefreshDatabaseState;
 use Illuminate\Http\Request;
 
 class phaseControl extends Controller
@@ -32,6 +34,6 @@ class phaseControl extends Controller
     public function supp($id){
         $phase = phase::find($id);
         $phase->delete();
-        return redirect('detail/{id}');
+        return redirect('/afficher');
     }
 }

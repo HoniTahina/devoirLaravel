@@ -29,7 +29,7 @@ Route::get('/modifier/{id}', [formcontrol::class, 'modifForm']);
 Route::post('modifier/modification/{id}', [formcontrol::class, 'modifier']);
 // supprimer le projet
 Route::get('/supprimer/{id}', [formcontrol::class, 'supp']);
-
+Route::get('detail/supr/{id}', [phaseControl::class, 'supp']);
 // afficher le formulaire d'ajout phase
 Route::get('/detail/formPhase/{id}', [phaseControl::class, 'phaseForm']);
 //revenir sur detail

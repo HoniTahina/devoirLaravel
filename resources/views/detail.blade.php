@@ -32,7 +32,7 @@
               <td>{{$ph->duree}}</td>
               <td>{{$ph->priorite}}</td>
               <td>
-                 <a href="{{'supr/' . $ph->id}}" class="btn btn-danger">Suppprimer</a>
+                 <a href="{{'supr/' . $ph->id }}" class="btn btn-danger">Suppprimer</a>
               </td>
             </tr>
           @endforeach
